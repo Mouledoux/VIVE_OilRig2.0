@@ -28,6 +28,12 @@ public class ExplosionsParticleSystemScaler : MonoBehaviour
 			
 			foreach (ParticleSystem particles in ps)
 			{
+                //var main = particles.main;
+
+                //main.startSizeMultiplier = scale;
+                //main.startSpeedMultiplier = scale;
+                //main.gravityModifierMultiplier = scale;
+
 				particles.startSize *= scale;
 				particles.startSpeed *= scale;
 				particles.gravityModifier *= scale;
