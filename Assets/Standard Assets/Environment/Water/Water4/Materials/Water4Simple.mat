@@ -59,15 +59,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _FresnelScale: 0.3897143
-    - _GerstnerIntensity: 1
+    - _FresnelScale: 0.15
+    - _GerstnerIntensity: -10
     - _HeightDisplacement: 2.3370318
     - _NormalsDisplacement: 72.72728
-    - _Shininess: 349.13794
+    - _Shininess: 500
     m_Colors:
     - _AnimationDirection: {r: 2, g: 1, b: -1, a: 1}
     - _AnimationTiling: {r: 0.4, g: 0.39099997, b: 0.56, a: 0.7}
-    - _BaseColor: {r: 0.17275561, g: 0.224076, b: 0.24626863, a: 0.5058824}
+    - _BaseColor: {r: 0.17275561, g: 0.224076, b: 0.33333334, a: 0.83137256}
     - _BumpDirection: {r: 1, g: 30, b: 20, a: -20}
     - _BumpTiling: {r: 0.04, g: 0.04, b: 0.04, a: 0.08}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -77,8 +77,8 @@ Material:
     - _GAmplitude: {r: 0.3, g: 0.2, b: 0.25, a: 0.25}
     - _GDirectionAB: {r: 0.85, g: 0.3, b: 0.25, a: 0.25}
     - _GDirectionCD: {r: -0.3, g: -0.9, b: 0.5, a: 0.5}
-    - _GFrequency: {r: 0.5, g: 0.25, b: 0.6, a: 0.245}
-    - _GSpeed: {r: 4, g: 2, b: 1, a: 1}
+    - _GFrequency: {r: 1, g: 0.01, b: 0.1, a: 0.1225}
+    - _GSpeed: {r: 1, g: 0.7, b: 0.5, a: 0.5}
     - _GSteepness: {r: 3.0301306, g: 1, b: 1, a: 1}
     - _InvFadeParemeter: {r: 0.27508128, g: 0.08562102, b: 0.09414239, a: 0.48031002}
     - _ReflectionColor: {r: 0.47582978, g: 0.6064865, b: 0.6641791, a: 0.47058824}
