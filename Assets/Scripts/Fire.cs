@@ -1,60 +1,4 @@
-﻿/*using UnityEngine;
-using System.Collections;
-
-public enum FireType
-{
-    WOOD,
-    ELECTRICAL,
-    FLAMMABLELIQUID,
-    GASEOUS,
-    METAL
-}
-
-public class Fire : MonoBehaviour
-{
-    private float originalScale;
-    FireManager fm;
-    public FireType fireType;
-    [SerializeField] float killFloat = 0f;
-    public bool lit = true;
-    bool toBig = false;
-
-    void Awake()
-    {
-        originalScale = transform.localScale.magnitude;
-        fm = transform.parent.GetComponent<FireManager>();
-    }
-
-	void Update ()
-    {
-        if (transform.localScale.magnitude >= 5 && lit)
-        {
-            lit = false;
-            fm.Lose();
-        }
-
-        if (transform.localScale.magnitude < killFloat)
-        {
-            lit = false;
-            gameObject.SetActive(false);
-        }
-
-        if(transform.localScale.magnitude < originalScale)
-        {
-            transform.localScale += (transform.localScale * (Time.deltaTime / 2));
-        }
-	}
-
-    public void ResetFire()
-    {
-        gameObject.transform.localScale = new Vector3(1, 1, 1) * originalScale;
-        lit = true;
-        gameObject.SetActive(true);
-    }
-    
-}*/
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public enum eFireType
@@ -108,30 +52,14 @@ public class Fire : MonoBehaviour
     }
 
     /// <summary>
-    /// Called once per frame
-    /// </summary>
-	void Update ()
-    {
-        if (m_CurrentScale < m_MinSize) // If the fire is smaller than the alloted size
-        {                               //
-            m_IsLit = false;                // then it is no longer lit
-        }
-
-        //else if (m_CurrentScale < m_MaxSize)    // If the fire is larger than the alloted size
-        //{                                       //
-        //    GrowBy(0.1f);                           // then grow
-        //}
-    }
-
-    /// <summary>
     /// Increases the size of the fire
     /// </summary>
     /// <param name="aRate">The rate at which the fire would grow per-second</param>
-    /// <returns>Returns 0 to signal successful completion</returns>
-    public int GrowBy(float aRate)
+    public void GrowBy(float aRate)
     {
         transform.localScale += Vector3.one * (Time.deltaTime * aRate); // Increase the size over time
-        return 0;                                                       // Return 0 to show completion
+
+        m_IsLit = m_CurrentScale > m_MinSize; // If the fire is smaller than the alloted size, then it is no longer lit
     }
 
     /// <summary>
