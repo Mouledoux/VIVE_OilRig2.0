@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4002559356751994}
   m_Layer: 0
-  m_Name: ExtinguisherCO2Unscripted
+  m_Name: CO2ExtinguisherUnscripted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

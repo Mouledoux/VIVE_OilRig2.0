@@ -52,9 +52,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: CO2 Extinguisher
-  packageType: 0
+  packageType: 2
   itemPrefab: {fileID: 1109723741740784, guid: 28b47bd5e29e24b4d9347ef0d7d54f7a, type: 2}
-  otherHandItemPrefab: {fileID: 0}
+  otherHandItemPrefab: {fileID: 1583428805686194, guid: 9fad365e23f699a428d449b7a012f92e,
+    type: 2}
   previewPrefab: {fileID: 1026560621021046, guid: bbfe5ce85292853479fb7c261e19d653,
     type: 2}
   fadedPreviewPrefab: {fileID: 1111704246239154, guid: a12d17014ebf31b4b8eb9f3a9f5d864d,

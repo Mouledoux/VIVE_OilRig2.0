@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4771676337233610}
   m_Layer: 0
-  m_Name: ExtinguisherCO2ModelOutline
+  m_Name: CO2ExtinguisherModelOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
