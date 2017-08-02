@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4182284551004624}
   - component: {fileID: 198560941179866012}
   - component: {fileID: 199255805731383912}
+  - component: {fileID: 114950263752343162}
   m_Layer: 0
   m_Name: WhiteSmoke
   m_TagString: Untagged
@@ -42,7 +43,6 @@ GameObject:
   - component: {fileID: 114033036293207184}
   - component: {fileID: 114571364066283372}
   - component: {fileID: 114654002994415160}
-  - component: {fileID: 136093108379986040}
   - component: {fileID: 114666286362659214}
   m_Layer: 0
   m_Name: CO2ExtinguisherNoz
@@ -261,7 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad7707454c101545a5e05ca55bf0945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_type: 0
 --- !u!114 &114853076329534120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,19 +285,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPackage: {fileID: 114505017363279736, guid: fca2de0f57b844544a46a05d1efd3055,
     type: 2}
---- !u!136 &136093108379986040
-CapsuleCollider:
+--- !u!114 &114950263752343162
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1583428805686194}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  m_Radius: 0.025
-  m_Height: 0
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1254638955884358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62489a5b17fd4a243bfdad1bb460e52a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_type: 0
 --- !u!198 &198560941179866012
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -756,7 +754,7 @@ ParticleSystem:
     randomizeRotationDirection: 1
     maxNumParticles: 1000
     size3D: 0
-    rotation3D: 1
+    rotation3D: 0
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
@@ -2746,11 +2744,11 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 4294967039
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:

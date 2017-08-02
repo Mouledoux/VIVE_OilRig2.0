@@ -1,15 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum eFireType
-{
-    WOOD,
-    ELECTRICAL,
-    FLAMMABLELIQUID,
-    GASEOUS,
-    METAL
-}
-
 public class Fire : MonoBehaviour
 {
     /// <summary>
@@ -38,10 +29,11 @@ public class Fire : MonoBehaviour
     /// </summary>
     public bool m_IsLit = true;
 
-    /// <summary>
-    /// The type of fire (wood, gas, etc) used for extinguishing
-    /// </summary>
-    public eFireType m_FireType;
+    public bool CO2, FOAM, WATER, POWDER;
+
+
+    private Mediator.Subscriptions subscriptions = new Mediator.Subscriptions();
+    private Mediator.Callback onExtinguish;
 
     /// <summary>
     /// Called when the application is started up
@@ -49,6 +41,13 @@ public class Fire : MonoBehaviour
     void Awake()
     {
         m_OriginalScale = m_CurrentScale;   // Sets the original size, to the current size
+    }
+
+    private void Start()
+    {
+        onExtinguish += DouseFire;
+        
+        subscriptions.Subscribe(gameObject.GetInstanceID().ToString(), onExtinguish);
     }
 
     /// <summary>
@@ -60,6 +59,12 @@ public class Fire : MonoBehaviour
         transform.localScale += Vector3.one * (Time.deltaTime * aRate); // Increase the size over time
 
         m_IsLit = m_CurrentScale > m_MinSize; // If the fire is smaller than the alloted size, then it is no longer lit
+
+        if (!m_IsLit)
+        {
+            transform.localScale = Vector3.zero;
+            gameObject.SetActive(false);
+        }
     }
 
     /// <summary>
@@ -70,5 +75,36 @@ public class Fire : MonoBehaviour
         m_IsLit = true;                                                 // Relight the fire
         gameObject.SetActive(true);                                     // Turn its object back on
         gameObject.transform.localScale = Vector3.one * m_OriginalScale;// Set it back to its original size
+    }
+
+    private void DouseFire(Packet data)
+    { 
+        string extType = data.strings[0];
+
+        if( eExtinguisherType.CO2.ToString() == extType && CO2)
+        {
+            GrowBy(-1);
+        }
+        else if (eExtinguisherType.FOAM.ToString() == extType && FOAM)
+        {
+            GrowBy(-1);
+        }
+        else if (eExtinguisherType.WATER.ToString() == extType && WATER)
+        {
+            GrowBy(-1);
+        }
+        else if (eExtinguisherType.POWDER.ToString() == extType && POWDER)
+        {
+            GrowBy(-1);
+        }
+        else
+        {
+            GrowBy(1);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        subscriptions.UnsubscribeAll();
     }
 }
