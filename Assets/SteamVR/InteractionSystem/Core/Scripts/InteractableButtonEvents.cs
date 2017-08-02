@@ -13,6 +13,7 @@ namespace Valve.VR.InteractionSystem
 	[RequireComponent( typeof( Interactable ) )]
 	public class InteractableButtonEvents : MonoBehaviour
 	{
+        public UnityEvent onTriggerHold;
 		public UnityEvent onTriggerDown;
 		public UnityEvent onTriggerUp;
 		public UnityEvent onGripDown;
@@ -31,7 +32,12 @@ namespace Valve.VR.InteractionSystem
 
 				if ( hand.controller != null )
 				{
-					if ( hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger ) )
+                    if (hand.controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).magnitude > 0f)
+                    {
+                        onTriggerHold.Invoke();
+                    }
+
+                    if ( hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger ) )
 					{
 						onTriggerDown.Invoke();
 					}
