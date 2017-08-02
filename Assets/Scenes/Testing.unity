@@ -494,6 +494,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 933dd18a9d536cc449961ac29da5c909, type: 2}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 933dd18a9d536cc449961ac29da5c909, type: 2}
   m_IsPrefabParent: 0
@@ -619,9 +623,63 @@ Prefab:
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1430564334952228, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
+      propertyPath: m_Name
+      value: VRCamera (eye)
+      objectReference: {fileID: 0}
+    - target: {fileID: 20562045514514070, guid: 11f09fb4709610c47956c098037c8efe,
+        type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857528767777024, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871283802108454, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849441693790358, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 92910707423841676, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
+    - {fileID: 114064432769082412, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &977278698 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1430564334952228, guid: 11f09fb4709610c47956c098037c8efe,
+    type: 2}
+  m_PrefabInternal: {fileID: 899360919}
+--- !u!4 &977278699 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4928210156878290, guid: 11f09fb4709610c47956c098037c8efe,
+    type: 2}
+  m_PrefabInternal: {fileID: 899360919}
+--- !u!114 &977278700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977278698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 977278699}
+  _ears: {fileID: 0}
+  wireframe: 0
+--- !u!92 &977278702
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977278698}
+  m_Enabled: 1
 --- !u!1001 &1228348962
 Prefab:
   m_ObjectHideFlags: 0
