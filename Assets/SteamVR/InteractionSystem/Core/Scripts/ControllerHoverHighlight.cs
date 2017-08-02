@@ -148,8 +148,9 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		public void ShowHighlight()
 		{
-			if ( renderModelLoaded == false || hand.AttachedObjects.Count > 0)
+			if ( renderModelLoaded == false || hand.AttachedObjects.Count > 1)
 			{
+                print(hand.AttachedObjects.Count);
 				return;
 			}
 

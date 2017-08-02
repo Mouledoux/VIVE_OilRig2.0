@@ -211,10 +211,10 @@ MonoBehaviour:
   m_MinSize: 0.1
   m_MaxSize: 3
   m_IsLit: 1
-  CO2: 0
-  FOAM: 0
-  WATER: 0
-  POWDER: 0
+  CO2: 1
+  FOAM: 1
+  WATER: 1
+  POWDER: 1
 --- !u!135 &135079016055342164
 SphereCollider:
   m_ObjectHideFlags: 1
