@@ -150,65 +150,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9965b5d6cc580dc4797f59993713072e, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &304372454 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1026560621021046, guid: bbfe5ce85292853479fb7c261e19d653,
-    type: 2}
-  m_PrefabInternal: {fileID: 1292794479}
---- !u!114 &304372455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 304372454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e53a985809f0949b9a42cc2a6888c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemPackage: {fileID: 114505017363279736, guid: fca2de0f57b844544a46a05d1efd3055,
-    type: 2}
-  requireTriggerPressToTake: 1
-  requireTriggerPressToReturn: 0
-  showTriggerHint: 1
-  attachmentFlags: 9
-  attachmentPoint: 
-  takeBackItem: 1
-  acceptDifferentItems: 0
-  pickupEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  dropEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  justPickedUpItem: 0
---- !u!114 &304372456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 304372454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &304372457
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 304372454}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15, z: 0.5}
-  m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1001 &899360919
 Prefab:
   m_ObjectHideFlags: 0
@@ -434,10 +375,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4002559356751994, guid: bbfe5ce85292853479fb7c261e19d653, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbfe5ce85292853479fb7c261e19d653, type: 2}
   m_IsPrefabParent: 0
@@ -531,7 +468,6 @@ GameObject:
   - component: {fileID: 1627240177}
   - component: {fileID: 1627240176}
   - component: {fileID: 1627240175}
-  - component: {fileID: 1627240179}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -606,14 +542,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1627240179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1627240174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d22614be87cec0e45a9790397f3b9569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

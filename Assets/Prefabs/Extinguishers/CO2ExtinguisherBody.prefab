@@ -411,11 +411,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6948c755e9613734dbac166d770c8e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTriggerDown:
+  onTriggerHold:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114140168806646356}
-        m_MethodName: Spray
+        m_MethodName: StartSpray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -427,16 +427,32 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  onTriggerUp:
+  onTriggerDown:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTriggerUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114140168806646356}
+        m_MethodName: StopSpray
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   onGripDown:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114214292954391666}
-        m_MethodName: SelfDestruct
+        m_MethodName: DetechFromViveHand
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -484,7 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c0ce8678d22cb47a9252e89a62c56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_type: 0
   m_linearMapping: {fileID: 114666841105234154}
 --- !u!114 &114214292954391666
 MonoBehaviour:

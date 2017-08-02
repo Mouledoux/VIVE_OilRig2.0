@@ -8,4 +8,19 @@ public class DestroyObject : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void DetechFromViveHand()
+    {
+        GetParentHand(gameObject).DetachObject(gameObject);
+    }
+
+     private Valve.VR.InteractionSystem.Hand GetParentHand(GameObject child)
+    {
+        Valve.VR.InteractionSystem.Hand hand = child.GetComponent<Valve.VR.InteractionSystem.Hand>();
+
+        if (hand == null)
+            return GetParentHand(child.transform.parent.gameObject);
+        else
+            return hand;
+    }
 }
