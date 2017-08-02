@@ -150,7 +150,6 @@ namespace Valve.VR.InteractionSystem
 		{
 			if ( renderModelLoaded == false || hand.AttachedObjects.Count > 1)
 			{
-                print(hand.AttachedObjects.Count);
 				return;
 			}
 

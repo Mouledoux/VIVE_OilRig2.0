@@ -29,14 +29,13 @@ public class ExtinguisherNoz : MonoBehaviour
     {
         float strength = data.floats[0];
 
-        m_sprayAudioSource.mute = false;
-        m_sprayAudioSource.pitch = strength;
+        m_sprayAudioSource.volume = strength;
         m_sprayParticles.emissionRate = (strength * 64f) -1;
     }
 
     private void StopSpray(Packet data)
     {
-        m_sprayAudioSource.mute = true;
+        m_sprayAudioSource.volume = 0;
         m_sprayParticles.emissionRate = 0;
     }
 
