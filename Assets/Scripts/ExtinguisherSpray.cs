@@ -19,7 +19,5 @@ public class ExtinguisherSpray : MonoBehaviour
         Packet data = new Packet(new int[0], new bool[0], new float[0], extinguisherData);
 
         Mediator.instance.NotifySubscribers(other.GetInstanceID().ToString(), data);
-
-        print(other.GetInstanceID());
     }
 }
