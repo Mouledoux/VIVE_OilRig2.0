@@ -5,11 +5,15 @@ using System.Collections;
 public class OnTriggerEvent : MonoBehaviour
 {
     public string m_Tag = "";
-    public UnityEngine.Events.UnityEvent m_Event;
-	void Start ()
+    public UnityEngine.Events.UnityEvent OnEnter;
+    public UnityEngine.Events.UnityEvent OnExit;
+
+    void Start ()
     {
         GetComponent<Collider>().isTrigger = true;
 	}
+
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +21,15 @@ public class OnTriggerEvent : MonoBehaviour
             if (!other.CompareTag(m_Tag))
                 return;
 
-        m_Event.Invoke();
+        OnEnter.Invoke();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (m_Tag != "")
+            if (!other.CompareTag(m_Tag))
+                return;
+
+        OnExit.Invoke();
     }
 }
