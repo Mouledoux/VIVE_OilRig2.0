@@ -9,6 +9,11 @@ public class DestroyObject : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void InvertEnabled()
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
+
     public void DetechFromViveHand()
     {
         GetParentHand(gameObject).DetachObject(gameObject);

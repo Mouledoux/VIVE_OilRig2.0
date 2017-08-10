@@ -22,6 +22,7 @@ namespace Valve.VR.InteractionSystem
 		public UnityEvent onTouchpadUp;
 		public UnityEvent onTouchpadTouch;
 		public UnityEvent onTouchpadRelease;
+        public UnityEvent onMenuPress;
 
 		//-------------------------------------------------
 		void Update()
@@ -76,6 +77,11 @@ namespace Valve.VR.InteractionSystem
 					{
 						onTouchpadRelease.Invoke();
 					}
+
+                    if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
+                    {
+                        onMenuPress.Invoke();
+                    }
 				}
 			}
 
