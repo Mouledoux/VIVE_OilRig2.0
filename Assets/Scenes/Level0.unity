@@ -260,15 +260,15 @@ MonoBehaviour:
   onHandClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000364702}
-        m_MethodName: TeleportToTransform
-        m_Mode: 2
+      - m_Target: {fileID: 162066928}
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Toggle
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: Valve.VR.InteractionSystem.CustomEvents+UnityEventHand, Assembly-CSharp,
@@ -352,6 +352,34 @@ Transform:
   m_PrefabParentObject: {fileID: 4727830864762800, guid: be5be8a1548931f40967f2317e6b5fda,
     type: 2}
   m_PrefabInternal: {fileID: 28126504}
+--- !u!1 &107152741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 107152742}
+  m_Layer: 0
+  m_Name: Flair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &107152742
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 107152741}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 144.365, y: 227.341, z: -21.801}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 704528979}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &108302029
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +628,122 @@ Transform:
   m_PrefabParentObject: {fileID: 4727830864762800, guid: be5be8a1548931f40967f2317e6b5fda,
     type: 2}
   m_PrefabInternal: {fileID: 161297583}
+--- !u!1 &162066926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 162066927}
+  - component: {fileID: 162066928}
+  - component: {fileID: 162066930}
+  - component: {fileID: 162066929}
+  m_Layer: 0
+  m_Name: VR_GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &162066927
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162066926}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 692117884}
+  m_Father: {fileID: 2000364701}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &162066928
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162066926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f12c5a9ee22ba4d428e9239e204e7f96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &162066929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162066926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6948c755e9613734dbac166d770c8e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTriggerHold:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTriggerDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTriggerUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onGripDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onGripUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTouchpadDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTouchpadUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTouchpadTouch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTouchpadRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &162066930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162066926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &166952225
 Prefab:
   m_ObjectHideFlags: 0
@@ -925,6 +1069,34 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 1
+--- !u!1 &202586769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 202586770}
+  m_Layer: 0
+  m_Name: 2ndFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202586770
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202586769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -54.29, y: 128.953, z: 5.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 704528979}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &224385970
 Prefab:
   m_ObjectHideFlags: 0
@@ -1301,7 +1473,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4107564296477420, guid: f3e07a651ce23ba488d8c20aea9eedbb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 130.23
+      value: 130.05
       objectReference: {fileID: 0}
     - target: {fileID: 4107564296477420, guid: f3e07a651ce23ba488d8c20aea9eedbb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1728,7 +1900,7 @@ GameObject:
   - component: {fileID: 692117886}
   - component: {fileID: 692117885}
   m_Layer: 0
-  m_Name: VR_GUI
+  m_Name: VR_GUI_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1740,9 +1912,9 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 692117883}
-  m_LocalRotation: {x: 0, y: 0, z: 0.0017977266, w: 0.9999984}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5000001, z: 1.5}
   m_Children:
   - {fileID: 1059019748}
   - {fileID: 924001334}
@@ -1750,12 +1922,12 @@ RectTransform:
   - {fileID: 1146834433}
   - {fileID: 1536817832}
   - {fileID: 7349847}
-  m_Father: {fileID: 2000364701}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.206}
+  m_Father: {fileID: 162066927}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &692117885
@@ -1928,7 +2100,12 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2108725262}
+  - {fileID: 107152742}
+  - {fileID: 1381881933}
+  - {fileID: 1020974569}
+  - {fileID: 202586770}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2036,6 +2213,11 @@ Prefab:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 23253176763838348, guid: 2cee52c4d1c6a6d478d9ca5e661c9819,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 417e639b66cd3a24e9c5312be99ce3bd, type: 2}
+    - target: {fileID: 23429618395013082, guid: 2cee52c4d1c6a6d478d9ca5e661c9819,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2233,7 +2415,7 @@ MonoBehaviour:
         m_MethodName: TeleportToTransform
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1381881933}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2496,6 +2678,34 @@ Transform:
   m_PrefabParentObject: {fileID: 4593680024621238, guid: f0639ee8abfd8a841b27bc85349f680f,
     type: 2}
   m_PrefabInternal: {fileID: 1018760517}
+--- !u!1 &1020974568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1020974569}
+  m_Layer: 0
+  m_Name: Tower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020974569
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020974568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.19, y: 180.039, z: -21.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 704528979}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1059019747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,7 +2862,7 @@ MonoBehaviour:
         m_MethodName: TeleportToTransform
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 2108725262}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3009,7 +3219,7 @@ MonoBehaviour:
         m_MethodName: TeleportToTransform
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 107152742}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3694,6 +3904,34 @@ Transform:
   m_PrefabParentObject: {fileID: 4727830864762800, guid: be5be8a1548931f40967f2317e6b5fda,
     type: 2}
   m_PrefabInternal: {fileID: 1381529847}
+--- !u!1 &1381881932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1381881933}
+  m_Layer: 0
+  m_Name: Helipad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1381881933
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1381881932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -66.604, y: 188.08, z: -13.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 704528979}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409625509
 GameObject:
   m_ObjectHideFlags: 0
@@ -3856,7 +4094,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1200, y: 375}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.390625}
+  savedTextUV0: {x: 0.26171875, y: 0.22460938}
   savedFill: 0
 --- !u!114 &1410875169
 MonoBehaviour:
@@ -4262,8 +4500,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1515266443}
-  m_LocalRotation: {x: -0.00465417, y: 0.83299875, z: 0.007010179, w: 0.55321085}
-  m_LocalPosition: {x: -37.55526, y: -23.543411, z: 17.347126}
+  m_LocalRotation: {x: -0.13725947, y: 0.6924584, z: 0.13676733, w: 0.69495034}
+  m_LocalPosition: {x: -37.475338, y: -24.447998, z: 16.144968}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4425,7 +4663,7 @@ MonoBehaviour:
         m_MethodName: TeleportToTransform
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 202586770}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4763,31 +5001,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.0011061152
+      value: -0.13725947
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.7076825
+      value: 0.6924584
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.0014303993
+      value: 0.13676733
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7065283
+      value: 0.69495034
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.37
+      value: -0.3747534
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -86.06
+      value: -88.448
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.16
+      value: 0.16144967
       objectReference: {fileID: 0}
     - target: {fileID: 1674653384087340, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -5203,7 +5441,7 @@ MonoBehaviour:
         m_MethodName: TeleportToTransform
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1020974569}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5676,6 +5914,16 @@ Prefab:
         type: 2}
       propertyPath: startingHandType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199025352400534, guid: 11f09fb4709610c47956c098037c8efe,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114740086617872642, guid: 11f09fb4709610c47956c098037c8efe,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
@@ -6191,3 +6439,31 @@ Transform:
   m_PrefabParentObject: {fileID: 4727830864762800, guid: be5be8a1548931f40967f2317e6b5fda,
     type: 2}
   m_PrefabInternal: {fileID: 2077670160}
+--- !u!1 &2108725261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2108725262}
+  m_Layer: 0
+  m_Name: Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2108725262
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2108725261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37, y: 150.2, z: 16}
+  m_LocalScale: {x: 1.5, y: 1.5000001, z: 1.5}
+  m_Children: []
+  m_Father: {fileID: 704528979}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
