@@ -402,5 +402,10 @@ namespace Valve.VR.InteractionSystem
 		{
 			//Do something appropriate here
 		}
+
+        public void TeleportToTransform(Transform target)
+        {
+            _instance.transform.position = target.position;
+        }
 	}
 }
