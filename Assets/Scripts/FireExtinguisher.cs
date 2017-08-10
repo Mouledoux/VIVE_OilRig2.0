@@ -30,7 +30,8 @@ public class FireExtinguisher : MonoBehaviour
 
     public void StartSpray()
     {
-        m_linearMapping.value = Mathf.Clamp(m_parentHand.controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).magnitude, 0.01f, 0.99f);
+        m_linearMapping.value =
+            Mathf.Clamp(m_parentHand.controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).magnitude, 0.01f, 0.99f);
         float[] gripStrength = { m_linearMapping.value };
         Packet data = new Packet(new int[0], new bool[0], gripStrength, new string[0]);
 
