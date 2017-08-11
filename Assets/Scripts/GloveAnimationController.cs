@@ -20,7 +20,8 @@ public class GloveAnimationController : MonoBehaviour
 	void Update ()
     {
         m_animator.SetFloat("TriggerStrength",
-            Mathf.Clamp(m_parentHand.controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).magnitude, 0.01f, 0.99f));
+            Mathf.Clamp(m_parentHand.controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).magnitude,
+            0.01f, 0.99f));
     }
 
     private Valve.VR.InteractionSystem.Hand GetParentHand(GameObject child)
