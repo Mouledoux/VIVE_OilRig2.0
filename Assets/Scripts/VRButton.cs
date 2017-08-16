@@ -9,7 +9,7 @@ public class VRButton : MonoBehaviour
 
     private void HandHoverUpdate(Valve.VR.InteractionSystem.Hand hand)
     {
-        if (hand.GetStandardInteractionButtonDown())
+        if (hand.GetStandardInteractionButton())
         {
             OnClick.Invoke();
         }
