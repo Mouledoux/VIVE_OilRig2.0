@@ -9,6 +9,7 @@ public class OnTriggerEvent : MonoBehaviour
     public UnityEngine.Events.UnityEvent OnExit;
 
     private GameObject collisionObject;
+    private bool canTrigger = true;
 
     void Start ()
     {
@@ -19,22 +20,30 @@ public class OnTriggerEvent : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!canTrigger) return;
+
         if (m_Tag != "")
             if (!other.CompareTag(m_Tag))
                 return;
 
         collisionObject = other.gameObject;
         OnEnter.Invoke();
+
+        canTrigger = false;
     }
 
     private void OnTriggerExit(Collider other)
     {
+        if (canTrigger) return;
+
         if (m_Tag != "")
             if (!other.CompareTag(m_Tag))
                 return;
 
         collisionObject = other.gameObject;
         OnExit.Invoke();
+
+        canTrigger = true;
     }
 
     public void SetParent(bool parent)
@@ -42,7 +51,7 @@ public class OnTriggerEvent : MonoBehaviour
         if (parent)
             collisionObject.transform.parent = transform;
         else
-            collisionObject.transform.parent = null;
+            collisionObject.transform.parent = collisionObject.transform.parent;
 
         print(collisionObject.name);
     }
