@@ -44,9 +44,10 @@ public class FlyIn : MonoBehaviour
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, originalRot, Time.deltaTime);
 
-            if(transform.rotation == originalRot)
+            if (Vector3.Distance(transform.rotation.eulerAngles, originalRot.eulerAngles) < 0.01f)
             {
                 OnEnd.Invoke();
+                print("done");
                 Destroy(this);
             }
         }

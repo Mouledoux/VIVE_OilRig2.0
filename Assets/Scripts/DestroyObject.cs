@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
 {
+    public void RemoveComponent(Component com)
+    {
+        Destroy(com);
+    }
+
     public void SelfDestruct()
     {
         Destroy(gameObject);
