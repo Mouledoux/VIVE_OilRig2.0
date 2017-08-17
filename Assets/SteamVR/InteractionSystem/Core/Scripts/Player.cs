@@ -405,6 +405,7 @@ namespace Valve.VR.InteractionSystem
 
         public void TeleportToTransform(Transform target)
         {
+            _instance.transform.parent = null;
             _instance.transform.position = target.position;
         }
 	}

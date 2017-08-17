@@ -18,9 +18,14 @@ public class TextTypingBubble : MonoBehaviour
         {
             m_textBox = null;
             Destroy(this);
-        } 
+        }
+        else
+        {
+            m_canProgress = false;
+            StartCoroutine(_PrintMessageToTextBox(0));
+        }
     }
-
+    
     private void Update()
     {
         
@@ -31,16 +36,13 @@ public class TextTypingBubble : MonoBehaviour
         
     }
 
-    public void NextMessage()
+    private IEnumerator _PrintMessageToTextBox(int messageIndex)
     {
+        TextBoxData text = m_messages[messageIndex];
 
-    }
-
-    private IEnumerator i_printMessageToTextBox(TextBoxData text)
-    {
         text.OnMessageStart.Invoke();
 
-        for(int i = 0; i < text.message.Length; i++)
+        for(int i = 0; i <= text.message.Length; i++)
         {
             m_textBox.text = text.message.Substring(0, i);
             yield return new WaitForSeconds(0.01f);
@@ -48,11 +50,19 @@ public class TextTypingBubble : MonoBehaviour
 
         text.OnMessageEnd.Invoke();
 
-        if (!text.requireInput)
+        if (text.requireInput)
         {
-            yield return new WaitForSeconds(text.clearDelay);
+            text.OnWaitForInput.Invoke();
+            yield return new WaitUntil(() => m_canProgress);
         }
 
+        yield return new WaitForSeconds(text.clearDelay);
+        m_textBox.text = null;
+
+        if (messageIndex < m_messages.Length)
+        {
+            StartCoroutine(_PrintMessageToTextBox(messageIndex + 1));
+        }
     }
 
     [System.Serializable]
