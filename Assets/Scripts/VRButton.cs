@@ -16,4 +16,10 @@ public class VRButton : MonoBehaviour
             OnClick.Invoke();
         }
     }
+
+    private void OnHandHoverEnd(Valve.VR.InteractionSystem.Hand hand)
+    {
+        Valve.VR.InteractionSystem.ControllerButtonHints.HideTextHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+    }
+
 }

@@ -57,6 +57,9 @@ public class Clipboard : MonoBehaviour
         if (t.isOn) return;
 
         t.isOn = true;
+        t.gameObject.SetActive(false);
+        t.gameObject.SetActive(true);        
+
         PlayAnim();
     }
 

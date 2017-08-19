@@ -423,7 +423,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1037376272}
   toggleTransition: 1
   graphic: {fileID: 2038041245}
@@ -3133,7 +3133,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1812270545}
   toggleTransition: 1
   graphic: {fileID: 882121582}
@@ -10382,7 +10382,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 180832053}
   toggleTransition: 1
   graphic: {fileID: 1301985751}
@@ -11309,7 +11309,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1020974568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.19, y: 180.039, z: -21.57}
+  m_LocalPosition: {x: 11.243, y: 180.089, z: -21.411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 704528979}
@@ -12409,7 +12409,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1216485738}
   toggleTransition: 1
   graphic: {fileID: 462010844}
@@ -14211,7 +14211,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1525919034}
   toggleTransition: 1
   graphic: {fileID: 1340850850}
@@ -14864,31 +14864,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.16369575
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.62814045
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.13743356
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.74816805
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.33785316
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -128.89778
+      value: -124.36
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.014936156
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1674653384087340, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_StaticEditorFlags
