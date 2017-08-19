@@ -408,5 +408,22 @@ namespace Valve.VR.InteractionSystem
             _instance.transform.parent = null;
             _instance.transform.position = target.position;
         }
+
+        public void ShowTeleportMenuHint()
+        {
+            StartCoroutine(_ShowTeleportMenuHints());
+        }
+
+        public IEnumerator _ShowTeleportMenuHints()
+        {
+            yield return null;
+
+            ControllerButtonHints.ShowTextHint(leftHand, EVRButtonId.k_EButton_ApplicationMenu, "Quick Teleport Menu");
+
+            yield return new WaitUntil(() => leftHand.controller.GetPress(EVRButtonId.k_EButton_ApplicationMenu));
+
+            ControllerButtonHints.HideTextHint(leftHand, EVRButtonId.k_EButton_ApplicationMenu);
+
+        }
 	}
 }

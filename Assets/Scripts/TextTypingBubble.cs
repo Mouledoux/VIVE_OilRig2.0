@@ -42,9 +42,16 @@ public class TextTypingBubble : MonoBehaviour
 
         text.OnMessageStart.Invoke();
 
-        for(int i = 0; i <= text.message.Length; i++)
+        for(int i = 0; i < text.message.Length; i++)
         {
-            m_textBox.text = text.message.Substring(0, i);
+            m_textBox.text = text.message.Substring(0, i + 1);
+
+            if (text.message[i] == ',')
+            {
+                m_textBox.text.Insert(i + 1, System.Environment.NewLine);
+                yield return new WaitForSeconds(1f);
+            }
+
             yield return new WaitForSeconds(0.01f);
         }
 

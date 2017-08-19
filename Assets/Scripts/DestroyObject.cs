@@ -22,6 +22,7 @@ public class DestroyObject : MonoBehaviour
     public void DetechFromViveHand()
     {
         GetParentHand(gameObject).DetachObject(gameObject);
+        Valve.VR.InteractionSystem.ControllerButtonHints.HideAllTextHints(GetParentHand(gameObject));
     }
 
      private Valve.VR.InteractionSystem.Hand GetParentHand(GameObject child)

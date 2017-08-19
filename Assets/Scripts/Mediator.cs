@@ -243,6 +243,7 @@ public sealed class Mediator
 /// <summary>
 /// Collecion of basic variables to be sent via delegates
 /// </summary>
+[System.Serializable]
 public class Packet
 {
     /// <summary>

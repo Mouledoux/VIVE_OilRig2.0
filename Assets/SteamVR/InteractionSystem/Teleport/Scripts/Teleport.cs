@@ -968,6 +968,8 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private IEnumerator TeleportHintCoroutine()
 		{
+            yield return new WaitForSeconds(15f);
+
 			float prevBreakTime = Time.time;
 			float prevHapticPulseTime = Time.time;
 

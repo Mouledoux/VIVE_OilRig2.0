@@ -51,7 +51,8 @@ namespace Valve.VR.InteractionSystem
 					if ( hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_Grip ) )
 					{
 						onGripDown.Invoke();
-					}
+                        ControllerButtonHints.HideButtonHint(hand, EVRButtonId.k_EButton_Grip);
+                    }
 
 					if ( hand.controller.GetPressUp( Valve.VR.EVRButtonId.k_EButton_Grip ) )
 					{

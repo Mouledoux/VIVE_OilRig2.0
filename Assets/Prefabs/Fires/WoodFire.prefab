@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62229994fa32d51449243ba8cf44e62c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: Wood
   m_MinSize: 0.1
   m_MaxSize: 3
   m_IsLit: 1

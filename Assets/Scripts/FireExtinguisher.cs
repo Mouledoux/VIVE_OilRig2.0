@@ -7,6 +7,8 @@ public class FireExtinguisher : MonoBehaviour
     private float m_MaxSpray = 0;
     private float m_CurrentSpray = 0;
 
+    private static bool hasDroppedOnce = false;
+
     [SerializeField]
     private Valve.VR.InteractionSystem.LinearMapping m_linearMapping;
 
@@ -15,6 +17,12 @@ public class FireExtinguisher : MonoBehaviour
     private void Start()
     {
         m_parentHand = GetParentHand(gameObject);
+
+        if (!hasDroppedOnce)
+        {
+            StartCoroutine(DropTut());
+            hasDroppedOnce = true;
+        }
     }
 
     private void Update()
@@ -51,5 +59,14 @@ public class FireExtinguisher : MonoBehaviour
             return GetParentHand(child.transform.parent.gameObject);
         else
             return hand;
+    }
+
+    public IEnumerator DropTut()
+    {
+        Valve.VR.InteractionSystem.ControllerButtonHints.ShowTextHint(m_parentHand, Valve.VR.EVRButtonId.k_EButton_Grip, "Drop");
+
+        yield return new WaitUntil(() => m_parentHand.controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).magnitude > 0);
+
+        Valve.VR.InteractionSystem.ControllerButtonHints.HideTextHint(m_parentHand, Valve.VR.EVRButtonId.k_EButton_Grip);
     }
 }

@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Fire : MonoBehaviour
 {
+    public string Type;
+
     /// <summary>
     /// The original size of the fire
     /// </summary>
@@ -62,8 +64,11 @@ public class Fire : MonoBehaviour
 
         if (!m_IsLit)
         {
+            string[] s = { Type };
+            Mediator.instance.NotifySubscribers("Fire", new Packet(new int[0], new bool[0], new float[0], s));
+
             transform.localScale = Vector3.zero;
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 

@@ -8,6 +8,9 @@ public class OnTriggerEvent : MonoBehaviour
     public UnityEngine.Events.UnityEvent OnEnter;
     public UnityEngine.Events.UnityEvent OnExit;
 
+    public string m_BroadcastMessage;
+    public Packet m_BroadcastPacket;
+
     private GameObject collisionObject;
     private bool canTrigger = true;
 
@@ -18,7 +21,7 @@ public class OnTriggerEvent : MonoBehaviour
 
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (!canTrigger) return;
 
@@ -54,5 +57,10 @@ public class OnTriggerEvent : MonoBehaviour
             collisionObject.transform.parent = collisionObject.transform.parent;
 
         print(collisionObject.name);
+    }
+
+    public void Broadcast()
+    {
+        Mediator.instance.NotifySubscribers(m_BroadcastMessage, m_BroadcastPacket);
     }
 }

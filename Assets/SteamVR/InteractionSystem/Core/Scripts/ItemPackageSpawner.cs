@@ -294,6 +294,7 @@ namespace Valve.VR.InteractionSystem
 			if ( showTriggerHint )
 			{
 				ControllerButtonHints.HideTextHint( hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger );
+                showTriggerHint = false;
 			}
 
 			if ( itemPackage.otherHandItemPrefab != null )
