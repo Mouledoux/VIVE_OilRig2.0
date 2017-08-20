@@ -54,8 +54,6 @@ public class Clipboard : MonoBehaviour
 
     private void Check(UnityEngine.UI.Toggle t)
     {
-        print("OMFG");
-
         if (t.isOn) return;
 
         t.isOn = true;
@@ -74,6 +72,5 @@ public class Clipboard : MonoBehaviour
     public void PlayAnimation()
     {
         anim.Play();
-        print("anim");
     }
 }
