@@ -62,5 +62,6 @@ public class OnTriggerEvent : MonoBehaviour
     public void Broadcast()
     {
         Mediator.instance.NotifySubscribers(m_BroadcastMessage, m_BroadcastPacket);
+        print(m_BroadcastMessage);
     }
 }

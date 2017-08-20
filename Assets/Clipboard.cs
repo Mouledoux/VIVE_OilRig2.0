@@ -7,16 +7,16 @@ public class Clipboard : MonoBehaviour
     public UnityEngine.UI.Toggle flair, oil, wood, electric, tower;
     public Animation anim;
 
-    Mediator.Callback FireOut;
-    Mediator.Callback Traversal;
+    private Mediator.Callback FireOut;
+    private Mediator.Callback Traversal;
+
+    private Mediator.Subscriptions subs = new Mediator.Subscriptions();
 
 	// Use this for initialization
-	void Start ()
+	void Awake ()
     {
         anim = GetComponent<Animation>();
 
-
-        Mediator.Subscriptions subs = new Mediator.Subscriptions();
         FireOut += FireCheck;
         Traversal += LocCheck;
 
@@ -36,7 +36,7 @@ public class Clipboard : MonoBehaviour
         }
     }
 
-    public void FireCheck(Packet p)
+    private void FireCheck(Packet p)
     {
         if (p.strings[0] == "Oil")
         {
@@ -52,15 +52,18 @@ public class Clipboard : MonoBehaviour
         }
     }
 
-    public void Check(UnityEngine.UI.Toggle t)
+    private void Check(UnityEngine.UI.Toggle t)
     {
+        print("OMFG");
+
         if (t.isOn) return;
 
         t.isOn = true;
-        t.gameObject.SetActive(false);
-        t.gameObject.SetActive(true);        
 
-        PlayAnim();
+        t.gameObject.SetActive(false);
+        t.gameObject.SetActive(true);
+
+        PlayAnimation();
     }
 
     public void PLayAudio()
@@ -68,8 +71,9 @@ public class Clipboard : MonoBehaviour
         GetComponent<AudioSource>().Play();
     }
 
-    public void PlayAnim()
+    public void PlayAnimation()
     {
         anim.Play();
+        print("anim");
     }
 }
