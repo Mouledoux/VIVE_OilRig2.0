@@ -6,11 +6,14 @@ public class Clipboard : MonoBehaviour
 {
     public UnityEngine.UI.Toggle flair, oil, wood, electric, tower;
     public Animation anim;
+    bool hasWon = false;
 
     private Mediator.Callback FireOut;
     private Mediator.Callback Traversal;
 
     private Mediator.Subscriptions subs = new Mediator.Subscriptions();
+
+    public UnityEngine.Events.UnityEvent onComplete;
 
 	// Use this for initialization
 	void Awake ()
@@ -62,6 +65,13 @@ public class Clipboard : MonoBehaviour
         t.gameObject.SetActive(true);
 
         PlayAnimation();
+        PLayAudio();
+
+        if (flair.isOn && tower.isOn && oil.isOn && electric.isOn && wood.isOn && !hasWon)
+        {
+            hasWon = true;
+            onComplete.Invoke();
+        }
     }
 
     public void PLayAudio()

@@ -23,16 +23,26 @@ namespace Valve.VR.InteractionSystem
 		public UnityEvent onTouchpadTouch;
 		public UnityEvent onTouchpadRelease;
         public UnityEvent onMenuPress;
-
-		//-------------------------------------------------
-		void Update()
+        public UnityEvent onLeftMenu;
+        public UnityEvent onRightMenu;
+        //-------------------------------------------------
+        void Update()
 		{
-			for ( int i = 0; i < Player.instance.handCount; i++ )
+            if (Player.instance.leftHand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
+            {
+                onLeftMenu.Invoke();
+            }
+            else if (Player.instance.rightHand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
+            {
+                onRightMenu.Invoke();
+            }
+
+            for ( int i = 0; i < Player.instance.handCount; i++ )
 			{
 				Hand hand = Player.instance.GetHand( i );
 
-				if ( hand.controller != null )
-				{
+                if ( hand.controller != null )
+				{                    
                     if (hand.controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).magnitude > 0f)
                     {
                         onTriggerHold.Invoke();

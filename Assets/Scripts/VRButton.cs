@@ -10,7 +10,7 @@ public class VRButton : MonoBehaviour
 
     private void HandHoverUpdate(Valve.VR.InteractionSystem.Hand hand)
     {
-        Valve.VR.InteractionSystem.ControllerButtonHints.ShowTextHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger, actionName);
+        //Valve.VR.InteractionSystem.ControllerButtonHints.ShowTextHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger, actionName);
         if (hand.GetStandardInteractionButton())
         {
             OnClick.Invoke();
@@ -19,7 +19,7 @@ public class VRButton : MonoBehaviour
 
     private void OnHandHoverEnd(Valve.VR.InteractionSystem.Hand hand)
     {
-        Valve.VR.InteractionSystem.ControllerButtonHints.HideTextHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+        //Valve.VR.InteractionSystem.ControllerButtonHints.HideTextHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
     }
 
 }

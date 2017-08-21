@@ -414,16 +414,40 @@ namespace Valve.VR.InteractionSystem
             StartCoroutine(_ShowTeleportMenuHints());
         }
 
+        public void ShowCheckListHint()
+        {
+            StartCoroutine(_ShowCheckListHint());
+        }
+
         public IEnumerator _ShowTeleportMenuHints()
         {
             yield return null;
 
             ControllerButtonHints.ShowTextHint(leftHand, EVRButtonId.k_EButton_ApplicationMenu, "Quick Teleport Menu");
 
-            yield return new WaitUntil(() => leftHand.controller.GetPress(EVRButtonId.k_EButton_ApplicationMenu));
+            while (!leftHand.controller.GetPress(EVRButtonId.k_EButton_ApplicationMenu))
+            {
+                leftHand.controller.TriggerHapticPulse(1000, EVRButtonId.k_EButton_ApplicationMenu);
+                yield return new WaitForSeconds(0.05f);
+            }
 
             ControllerButtonHints.HideTextHint(leftHand, EVRButtonId.k_EButton_ApplicationMenu);
 
         }
-	}
+        public IEnumerator _ShowCheckListHint()
+        {
+            yield return null;
+
+            ControllerButtonHints.ShowTextHint(rightHand, EVRButtonId.k_EButton_ApplicationMenu, "ToDo List");
+
+           while (!rightHand.controller.GetPress(EVRButtonId.k_EButton_ApplicationMenu))
+            {
+                rightHand.controller.TriggerHapticPulse(1000, EVRButtonId.k_EButton_ApplicationMenu);
+                yield return new WaitForSeconds(0.05f);
+            }
+
+            ControllerButtonHints.HideTextHint(rightHand, EVRButtonId.k_EButton_ApplicationMenu);
+
+        }
+    }
 }

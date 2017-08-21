@@ -12,7 +12,7 @@ public class TextTypingBubble : MonoBehaviour
 
     private bool m_canProgress;
 
-    private void Start()
+    private void OnEnable()
     {
        if(m_textBox == null)
         {
