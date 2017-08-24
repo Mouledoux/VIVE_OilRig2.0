@@ -438,7 +438,7 @@ namespace Valve.VR.InteractionSystem
         {
             yield return null;
 
-            ControllerButtonHints.ShowTextHint(rightHand, EVRButtonId.k_EButton_ApplicationMenu, "ToDo List");
+            ControllerButtonHints.ShowTextHint(rightHand, EVRButtonId.k_EButton_ApplicationMenu, "To Do List");
 
            while (!rightHand.controller.GetPress(EVRButtonId.k_EButton_ApplicationMenu))
             {

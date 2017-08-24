@@ -37,8 +37,6 @@ public class OnTriggerEvent : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (canTrigger) return;
-
         if (m_Tag != "")
             if (!other.CompareTag(m_Tag))
                 return;
