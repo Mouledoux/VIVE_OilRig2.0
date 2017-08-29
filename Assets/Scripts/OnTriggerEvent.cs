@@ -52,7 +52,7 @@ public class OnTriggerEvent : MonoBehaviour
         if (parent)
             collisionObject.transform.parent = transform;
         else
-            collisionObject.transform.parent = collisionObject.transform.parent;
+            collisionObject.transform.parent = null;
 
         print(collisionObject.name);
     }

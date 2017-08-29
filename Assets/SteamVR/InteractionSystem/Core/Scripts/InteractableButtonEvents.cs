@@ -31,10 +31,13 @@ namespace Valve.VR.InteractionSystem
             if (Player.instance.leftHand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
             {
                 onLeftMenu.Invoke();
+                ControllerButtonHints.HideAllTextHints(Player.instance.leftHand);
+
             }
             else if (Player.instance.rightHand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
             {
                 onRightMenu.Invoke();
+                ControllerButtonHints.HideAllTextHints(Player.instance.rightHand);
             }
 
             for ( int i = 0; i < Player.instance.handCount; i++ )

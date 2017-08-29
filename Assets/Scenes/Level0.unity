@@ -2549,7 +2549,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 327708292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0fe02cf4735bc24a9e463e070f0f4cf, type: 3}
   m_Name: 
@@ -2601,7 +2601,7 @@ BoxCollider:
   m_GameObject: {fileID: 327708292}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 4, y: 1, z: 4}
   m_Center: {x: 0, y: 0.5, z: 1}
@@ -16362,31 +16362,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.06362646
+      value: 0.00036701476
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.9245549
+      value: 0.98826975
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.17771573
+      value: 0.002372704
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.33100918
+      value: -0.15269992
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.8650538
+      value: -0.36578318
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -129.36862
+      value: -135.2855
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.07419301
+      value: 0.3715434
       objectReference: {fileID: 0}
     - target: {fileID: 1674653384087340, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -18238,12 +18238,12 @@ Prefab:
     - target: {fileID: 114839668950410958, guid: 11f09fb4709610c47956c098037c8efe,
         type: 2}
       propertyPath: startingHandType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114284783578964504, guid: 11f09fb4709610c47956c098037c8efe,
         type: 2}
       propertyPath: startingHandType
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114199025352400534, guid: 11f09fb4709610c47956c098037c8efe,
         type: 2}
