@@ -881,9 +881,6 @@ namespace Valve.VR.InteractionSystem
 					if ( Physics.Raycast( teleportPosition + 0.05f * Vector3.down, Vector3.down, out raycastHit, floorFixupMaximumTraceDistance, floorFixupTraceLayerMask ) )
 					{
 						teleportPosition = raycastHit.point;
-                        //////////
-                        Valve.VR.InteractionSystem.Player.instance.transform.parent = raycastHit.transform;
-                        //////////
 					}
 				}
 			}
@@ -899,6 +896,7 @@ namespace Valve.VR.InteractionSystem
 			}
 
 			Teleport.Player.Send( pointedAtTeleportMarker );
+            InteractionSystem.Player.instance.gameObject.transform.parent = teleportArea.transform;
 		}
 
 

@@ -2549,7 +2549,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 327708292}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0fe02cf4735bc24a9e463e070f0f4cf, type: 3}
   m_Name: 
@@ -2601,7 +2601,7 @@ BoxCollider:
   m_GameObject: {fileID: 327708292}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4, y: 1, z: 4}
   m_Center: {x: 0, y: 0.5, z: 1}
@@ -2804,7 +2804,7 @@ MonoBehaviour:
   _head: {fileID: 363811644}
   _ears: {fileID: 0}
   wireframe: 0
---- !u!92 &363811647
+--- !u!92 &363811646
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -16362,31 +16362,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.00036701476
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.98826975
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.002372704
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.15269992
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.36578318
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -135.2855
+      value: -124.36
       objectReference: {fileID: 0}
     - target: {fileID: 4989217743742430, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.3715434
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1674653384087340, guid: 514894c4a4249a648a36f2d6034b584e, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -18396,6 +18396,24 @@ Prefab:
     - target: {fileID: 1430564334952228, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
       propertyPath: m_Name
       value: VRCamera (eye)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430564334952228, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20170726051559448, guid: 11f09fb4709610c47956c098037c8efe,
+        type: 2}
+      propertyPath: m_Depth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20154577259371810, guid: 11f09fb4709610c47956c098037c8efe,
+        type: 2}
+      propertyPath: m_Depth
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379149497644878, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 92910707423841676, guid: 11f09fb4709610c47956c098037c8efe, type: 2}
