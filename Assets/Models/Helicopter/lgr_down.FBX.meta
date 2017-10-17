@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 34713db2c89a90045a15cfe8cffd690b
+timeCreated: 1502723627
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: chrome_brakediscleft
+    100002: chrome_brakediscleft001
+    100004: chrome_ldgfront1
+    100006: chrome_ldgleft003
+    100008: chrome_ldgleft004
+    100010: chrome_ldgleft1
+    100012: chrome_ldgleft2
+    100014: //RootNode
+    100016: paintwhite_ldgfront
+    100018: paintwhite_ldgfront004
+    100020: paintwhite_ldgfront005
+    100022: paintwhite_ldgfront006
+    100024: paintwhite_ldgfront007
+    100026: paintwhite_ldgfront1
+    100028: paintwhite_ldgfront2
+    100030: paintwhite_ldgleft003
+    100032: paintwhite_ldgleft004
+    100034: paintwhite_ldgleft005
+    100036: paintwhite_ldgleft006
+    100038: paintwhite_ldgleft007
+    100040: paintwhite_ldgleft008
+    100042: paintwhite_ldgleft009
+    100044: paintwhite_ldgleft010
+    100046: paintwhite_ldgleft1
+    100048: paintwhite_ldgleft2
+    100050: paintwhite_wheelfront
+    100052: paintwhite_wheelleft
+    100054: paintwhite_wheelleft001
+    100056: plasticblack_ldgleft
+    100058: plasticblack_ldgleft001
+    100060: tire_front
+    100062: tire_ldgleft
+    100064: tire_ldgleft001
+    400000: chrome_brakediscleft
+    400002: chrome_brakediscleft001
+    400004: chrome_ldgfront1
+    400006: chrome_ldgleft003
+    400008: chrome_ldgleft004
+    400010: chrome_ldgleft1
+    400012: chrome_ldgleft2
+    400014: //RootNode
+    400016: paintwhite_ldgfront
+    400018: paintwhite_ldgfront004
+    400020: paintwhite_ldgfront005
+    400022: paintwhite_ldgfront006
+    400024: paintwhite_ldgfront007
+    400026: paintwhite_ldgfront1
+    400028: paintwhite_ldgfront2
+    400030: paintwhite_ldgleft003
+    400032: paintwhite_ldgleft004
+    400034: paintwhite_ldgleft005
+    400036: paintwhite_ldgleft006
+    400038: paintwhite_ldgleft007
+    400040: paintwhite_ldgleft008
+    400042: paintwhite_ldgleft009
+    400044: paintwhite_ldgleft010
+    400046: paintwhite_ldgleft1
+    400048: paintwhite_ldgleft2
+    400050: paintwhite_wheelfront
+    400052: paintwhite_wheelleft
+    400054: paintwhite_wheelleft001
+    400056: plasticblack_ldgleft
+    400058: plasticblack_ldgleft001
+    400060: tire_front
+    400062: tire_ldgleft
+    400064: tire_ldgleft001
+    2300000: chrome_brakediscleft
+    2300002: chrome_brakediscleft001
+    2300004: chrome_ldgfront1
+    2300006: chrome_ldgleft003
+    2300008: chrome_ldgleft004
+    2300010: chrome_ldgleft1
+    2300012: chrome_ldgleft2
+    2300014: paintwhite_ldgfront
+    2300016: paintwhite_ldgfront004
+    2300018: paintwhite_ldgfront005
+    2300020: paintwhite_ldgfront006
+    2300022: paintwhite_ldgfront007
+    2300024: paintwhite_ldgfront1
+    2300026: paintwhite_ldgfront2
+    2300028: paintwhite_ldgleft003
+    2300030: paintwhite_ldgleft004
+    2300032: paintwhite_ldgleft005
+    2300034: paintwhite_ldgleft006
+    2300036: paintwhite_ldgleft007
+    2300038: paintwhite_ldgleft008
+    2300040: paintwhite_ldgleft009
+    2300042: paintwhite_ldgleft010
+    2300044: paintwhite_ldgleft1
+    2300046: paintwhite_ldgleft2
+    2300048: paintwhite_wheelfront
+    2300050: paintwhite_wheelleft
+    2300052: paintwhite_wheelleft001
+    2300054: plasticblack_ldgleft
+    2300056: plasticblack_ldgleft001
+    2300058: tire_front
+    2300060: tire_ldgleft
+    2300062: tire_ldgleft001
+    3300000: chrome_brakediscleft
+    3300002: chrome_brakediscleft001
+    3300004: chrome_ldgfront1
+    3300006: chrome_ldgleft003
+    3300008: chrome_ldgleft004
+    3300010: chrome_ldgleft1
+    3300012: chrome_ldgleft2
+    3300014: paintwhite_ldgfront
+    3300016: paintwhite_ldgfront004
+    3300018: paintwhite_ldgfront005
+    3300020: paintwhite_ldgfront006
+    3300022: paintwhite_ldgfront007
+    3300024: paintwhite_ldgfront1
+    3300026: paintwhite_ldgfront2
+    3300028: paintwhite_ldgleft003
+    3300030: paintwhite_ldgleft004
+    3300032: paintwhite_ldgleft005
+    3300034: paintwhite_ldgleft006
+    3300036: paintwhite_ldgleft007
+    3300038: paintwhite_ldgleft008
+    3300040: paintwhite_ldgleft009
+    3300042: paintwhite_ldgleft010
+    3300044: paintwhite_ldgleft1
+    3300046: paintwhite_ldgleft2
+    3300048: paintwhite_wheelfront
+    3300050: paintwhite_wheelleft
+    3300052: paintwhite_wheelleft001
+    3300054: plasticblack_ldgleft
+    3300056: plasticblack_ldgleft001
+    3300058: tire_front
+    3300060: tire_ldgleft
+    3300062: tire_ldgleft001
+    4300000: paintwhite_ldgfront
+    4300002: paintwhite_ldgfront006
+    4300004: paintwhite_ldgfront005
+    4300006: paintwhite_ldgfront004
+    4300008: chrome_ldgfront1
+    4300010: paintwhite_ldgfront007
+    4300012: tire_front
+    4300014: paintwhite_wheelfront
+    4300016: paintwhite_ldgfront2
+    4300018: paintwhite_ldgfront1
+    4300020: paintwhite_ldgleft006
+    4300022: paintwhite_ldgleft007
+    4300024: paintwhite_ldgleft008
+    4300026: tire_ldgleft001
+    4300028: paintwhite_wheelleft001
+    4300030: chrome_brakediscleft001
+    4300032: chrome_ldgleft003
+    4300034: paintwhite_ldgleft009
+    4300036: plasticblack_ldgleft001
+    4300038: chrome_ldgleft004
+    4300040: paintwhite_ldgleft010
+    4300042: paintwhite_ldgleft1
+    4300044: paintwhite_ldgleft003
+    4300046: paintwhite_ldgleft004
+    4300048: tire_ldgleft
+    4300050: paintwhite_wheelleft
+    4300052: chrome_brakediscleft
+    4300054: chrome_ldgleft1
+    4300056: paintwhite_ldgleft005
+    4300058: plasticblack_ldgleft
+    4300060: chrome_ldgleft2
+    4300062: paintwhite_ldgleft2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
